@@ -11,9 +11,67 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Sora:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Sora:wght@400;500;600;700;800&display=swap"></noscript>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/css/intlTelInput.css">
+<link rel="canonical" href="https://www.codebunny.net/contact.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Code Bunny",
+  "url": "https://www.codebunny.net/",
+  "logo": "https://www.codebunny.net/assets/img/logo.webp",
+  "image": "https://www.codebunny.net/assets/img/logo.webp",
+  "description": "Website, mobile app and software development studio \u2014 5 years building and shipping real products, founded by Bhavansh Arora.",
+  "founder": {
+    "@type": "Person",
+    "name": "Bhavansh Arora"
+  },
+  "email": "bhavansh@codebunny.net"
+}
+</script>
 <link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's included when I buy a site like Beauty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every sale includes the full source code, design assets, and the domain (or subdomain, where noted). We'll also agree on a handoff window for questions and a walkthrough of the codebase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize a site after I buy it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely — every sale includes the full source code, so you're free to re-brand, extend or restyle it however you like. We're also happy to help with that work directly if you'd rather not do it yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a new site for me instead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely — client builds are Code Bunny's core business. Tell us about your project in the form above and we'll follow up with a scope and timeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast do you typically deliver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on scope, but most landing pages and templates ship in 1–2 weeks, with larger builds scoped individually."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- EDIT ME: This form submits via FormSubmit.co (see assets/js/main.js) to
      bhavansharora21@gmail.com — no backend required. FormSubmit will email
@@ -37,19 +95,19 @@
       <a href="marketplace.html" class="btn btn-ghost btn-sm">Browse sites</a>
       <a href="#contact-form" class="btn btn-primary btn-sm">Say hello</a>
     </div>
-    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<div class="mobile-menu">
+<div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="marketplace.html">Sites for Sale</a>
-  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="active">Contact</a>
   <a href="#contact-form" class="btn btn-primary">Say hello</a>
 </div>
 
-<header class="page-hero">
+<header id="main" class="page-hero">
   <div class="hero-blob b2" style="opacity:.6"></div>
   <div class="hero-blob b3" style="opacity:.6"></div>
   <div class="wrap" style="position:relative;z-index:2;">
@@ -63,7 +121,7 @@
   <div class="wrap contact-grid">
     <div class="reveal">
       <div class="card">
-        <h3 style="margin-bottom:6px;">Send a message</h3>
+        <h2 style="margin-bottom:6px;font-size:clamp(1.25rem, 1.6vw + .6rem, 1.6rem);font-family:'Sora',sans-serif;">Send a message</h2>
         <p style="margin-bottom:26px;">We read every message and reply personally.</p>
         <form id="contact-form">
           <input type="hidden" name="_subject" value="New message from Code Bunny website">
